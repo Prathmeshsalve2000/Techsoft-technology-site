@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>About Techsoft Technologies</title>
+    <link rel="icon" type="image" href="/Asset/icon img.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
+/* navbar */
+nav{
+    
+    display: flex;
+    padding: 0.5% 3%;
+    justify-content: center;
+    align-items: center;
+    background-color: #00000091;
+    
+}
+
+
+nav h1{
+    font-size: 25px;
+    display: block;
+    cursor: pointer;
+    color: #fff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+span {
+    color: rgb(53, 242, 242);
+} 
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-links .fa-solid{
+    margin-right: 8px;
+}
+
+.active, .nav-links ul li:hover{
+    background-color: rgb(3, 213, 210);
+    border-radius: 3px;
+}
+
+/* SUB MENU */
+
+.sub-menu-1{
+    display: none;
+}
+
+.nav-links ul li:hover .sub-menu-1{
+    display: block;
+    position: absolute;
+    background: rgb(3, 213, 210);
+    margin-top: 9px;
+    margin-left: -15px;
+}
+.nav-links ul li:hover .sub-menu-1 ul{
+    display: block;
+    margin: 10px;
+    transition: 30s;
+}
+
+.nav-links ul li:hover .sub-menu-1 li{
+    width: 150px;
+    padding: 15px;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    text-align: left;
+}
+
+.nav-links ul li:hover .sub-menu-1 li a:hover{
+    color: #0044ff;
+}
+
+.sub-menu-2{
+    display: none;
+}
+
+.me:hover .sub-menu-2{
+    position: absolute;
+    display: block;
+    margin-top: 9px;
+    margin-left: 140px;
+    background:  rgb(3, 213, 210);
+}
+
+.about {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: #85cfaf;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.about ul li{
+    border: 1px solid black;
+    display: inline-block;
+    padding: 5px 5px;
+    background-color: deepskyblue
+}
+
+h2 {
+    color: #333;
+}
+
+h3 {
+    color: #555;
+    margin-top: 15px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+</style>
+<body>
+
+        
+        
+    <nav>
+        <h1>TECHSOFT<br><span>TECHNOLOGIES.</span></h1>
+            <div class="nav-links">
+            <ul>
+                <li > <i class="fa-solid fa-house"></i><a href="Index.html">HOME</a></li>
+                <li class="active"> <i class="fa-solid fa-user"></i><a href="About.html">ABOUT</a>
+                   
+                </li>
+                <li> <i class="fa-solid fa-clone"></i><a href="srevices.html">SERVICES</a>
+                    <div class="sub-menu-1">
+                        <ul>
+                            <li><a href="">WEB DESINING</a></li>
+                            <li><a href="">CLOUD SOLUTION</a></li>
+                            <li class="me"><a href="">MOBILE APP</a></i>
+                                <div class="sub-menu-2">
+                                    <ul>
+                                        <li><a href="">ANDROID APP</a></li>
+                                        <li><a href="">ios App</a></li>
+                                        <li><a href="">IONIC APP</a></li>
+                                    </ul>
+                                </div>   
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li> <i class="fa-solid fa-users"></i><a href="Career.html">CAREERS</a>
+                    <div class="sub-menu-1">
+                        <ul>
+                            <li><a href="">SOFTWARE DEVLOPER</a></li>
+                            <li><a href="">CLOUD SOLUTION</a></li>
+                            <li><a href="">MACHINE LEARNING</a></li>
+                        </ul>
+                    </div>  
+                </li>
+                <li> <i class="fa-solid fa-edit"></i><a href="Training.html">TRAINING</a></li>
+                <li> <i class="fa-solid fa-phone"></i><a href="Contact.html">CONTACT</a></li>
+                <li><i class="fa-solid fa-right-to-bracket"></i><a href="Login.html">LOGIN</a></li>
+            </ul>
+        </div>
+    </nav>
+   
+
+    <section class="about">
+        <h2><u>About Us</u></h2>
+        <p>Techsoft Technologies is a cutting-edge technology company that specializes in providing innovative solutions to businesses and individuals.<br> With a team of skilled professionals, we strive to deliver excellence in every project we undertake.</p>
+        <br><br>
+        <h3><u>Our Mission</u></h3>
+        <p>Empowering businesses and individuals through technology, fostering innovation,<br> and delivering high-quality solutions that make a positive impact on the world.</p>
+
+        <h3><u>Our Vision</u></h3>
+        <p>To be a globally recognized technology leader, known for our commitment <br>to excellence, integrity, and the success of our clients.</p>
+          <br><br><br>
+        <h3><u>Why Choose Techsoft Technologies?</u></h3>
+        <ul>
+            <li>Experienced and Talented Team</li>
+            <li>Cutting-edge Technology Solutions</li>
+            <li>Client-Centric Approach</li>
+            <li>Commitment to Quality</li>
+            <li>Innovation at the Core</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Techsoft Technologies</p>
+    </footer>
+
+</body>
+
+</html>

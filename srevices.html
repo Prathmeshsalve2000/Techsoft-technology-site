@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="icon" type="image" href="/Asset/icon img.png">
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <style>
+
+nav{
+    
+    display: flex;
+    padding: 0.5% 3%;
+    justify-content: center;
+    align-items: center;
+    background-color: #00000091;
+    
+}
+
+
+nav h1{
+    font-size: 25px;
+    display: block;
+    cursor: pointer;
+    color: #fff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+span {
+    color: rgb(53, 242, 242);
+} 
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-links .fa-solid{
+    margin-right: 8px;
+}
+
+.active, .nav-links ul li:hover{
+    background-color: rgb(3, 213, 210);
+    border-radius: 3px;
+}
+
+/* SUB MENU */
+
+.sub-menu-1{
+    display: none;
+}
+
+.nav-links ul li:hover .sub-menu-1{
+    display: block;
+    position: absolute;
+    background: rgb(3, 213, 210);
+    margin-top: 9px;
+    margin-left: -15px;
+}
+.nav-links ul li:hover .sub-menu-1 ul{
+    display: block;
+    margin: 10px;
+    transition: 30s;
+}
+
+.nav-links ul li:hover .sub-menu-1 li{
+    width: 150px;
+    padding: 15px;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    text-align: left;
+}
+
+.nav-links ul li:hover .sub-menu-1 li a:hover{
+    color: #0044ff;
+}
+
+.sub-menu-2{
+    display: none;
+}
+
+.me:hover .sub-menu-2{
+    position: absolute;
+    display: block;
+    margin-top: 9px;
+    margin-left: 140px;
+    background:  rgb(3, 213, 210);
+}
+
+
+
+    .animation{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    overflow: hidden;
+    background: url(/Asset/Images/ABOUT\ BACKGROUND.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.h h1{
+    font-size: 55px;
+    color: #fefbb9;
+    font-weight: 600;
+    margin-top: -370px;
+    margin-left: 650px;
+}
+.container{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow: hidden;
+}
+
+.imgContainer{
+    width: 100%;
+    height: 600px;
+    position: absolute;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+}
+
+.slide_div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 30px 0 30px;
+}
+
+img{
+    position: relative;
+    height: 370px;
+    width: 240px;
+    filter: saturate(100%);
+    transition: 0.7s;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+}
+
+.button{
+    position: absolute;
+    width: 240px;
+    height: 370px;
+    transition: 0.7s;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+}
+
+.button:hover{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+#slider1:target ~ .imgContainer #img1,
+#slider1:target ~ .imgContainer #button1{
+    width: 390px;
+    height: 600px;
+    background-color: transparent;
+    filter: saturate(50%);
+}
+
+#slider2:target ~ .imgContainer #img2,
+#slider2:target ~ .imgContainer #button2{
+    width: 390px;
+    height: 600px;
+    background-color: transparent;
+    filter: saturate(50%);
+}
+
+#slider3:target ~ .imgContainer #img3,
+#slider3:target ~ .imgContainer #button3{
+    width: 390px;
+    height: 600px;
+    background-color: transparent;
+    filter: saturate(50%);
+}
+
+#slider4:target ~ .imgContainer #img4,
+#slider4:target ~ .imgContainer #button4{
+    width: 390px;
+    height: 600px;
+    background-color: transparent;
+    filter: saturate(50%);
+}
+
+
+#slider1:target ~ .imgContainer{
+    left: 60%;
+}
+#slider2:target ~ .imgContainer{
+    left: 40%;
+}
+#slider3:target ~ .imgContainer{
+    left: 20%;
+}
+#slider4:target ~ .imgContainer{
+    left: 0%;
+}
+
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+   </style>
+</head>
+<body>
+
+    <nav>
+        <h1>TECHSOFT<br><span>TECHNOLOGIES.</span></h1>
+            <div class="nav-links">
+            <ul>
+                <li > <i class="fa-solid fa-house"></i><a href="Index.html">HOME</a></li>
+                <li> <i class="fa-solid fa-user"></i><a href="About.html">ABOUT</a>
+                   
+                </li>
+                <li class="active"> <i class="fa-solid fa-clone"></i><a href="srevices.html">SERVICES</a>
+                    <div class="sub-menu-1">
+                        <ul>
+                            <li><a href="">WEB DESINING</a></li>
+                            <li><a href="">CLOUD SOLUTION</a></li>
+                            <li class="me"><a href="">MOBILE APP</a></i>
+                                <div class="sub-menu-2">
+                                    <ul>
+                                        <li><a href="">ANDROID APP</a></li>
+                                        <li><a href="">ios App</a></li>
+                                        <li><a href="">IONIC APP</a></li>
+                                    </ul>
+                                </div>   
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li> <i class="fa-solid fa-users"></i><a href="Career.html">CAREERS</a>
+                    <div class="sub-menu-1">
+                        <ul>
+                            <li><a href="">SOFTWARE DEVLOPER</a></li>
+                            <li><a href="">CLOUD SOLUTION</a></li>
+                            <li><a href="">MACHINE LEARNING</a></li>
+                        </ul>
+                    </div>  
+                </li>
+                <li> <i class="fa-solid fa-edit"></i><a href="Training.html">TRAINING</a></li>
+                <li> <i class="fa-solid fa-phone"></i><a href="Contact.html">CONTACT</a></li>
+                <li><i class="fa-solid fa-right-to-bracket"></i><a href="Login.html">LOGIN</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="animation">
+        <div class="h"><h1>SERVICES</h1></div>
+        <div class="container">
+            <span class="slider" id="slider1"></span>
+            <span class="slider" id="slider2"></span>
+            <span class="slider" id="slider3"></span>
+            <span class="slider" id="slider4"></span>
+    
+    
+            <div class="imgContainer">
+    
+                <div class="slide_div" id="slide_1">
+                 <img src="/Asset/Images/WEB DESIGN.png" alt="" class="img" id="img1">
+                 <a href="#slider1" class="button" id="button1"></a>
+                </div>
+                <div class="slide_div" id="slide_2">
+                 <img src="/Asset/Images/CLOUD SERVICES.png" alt="" class="img" id="img2">
+                 <a href="#slider2" class="button" id="button2"></a>
+                </div>
+                <div class="slide_div" id="slide_3">
+                 <img src="/Asset/Images/MOBILE APP.png" alt="" class="img" id="img3">
+                 <a href="#slider3" class="button" id="button3"></a>
+                </div>
+                <div class="slide_div" id="slide_4">
+                 <img src="/Asset/Images/MARKETING.png" alt="" class="img" id="img4">
+                 <a href="#slider4" class="button" id="button4"></a>
+                </div>
+    
+                </div>
+            </section>
+
+            <footer>
+                <p>&copy; 2023 Techsoft Technologies</p>
+            </footer>
+           
+</body>
+</html>
+
+

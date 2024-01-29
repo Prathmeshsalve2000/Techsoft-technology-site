@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="icon" type="image" href="/Asset/icon img.png">
+</head>
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+        background: url(/Asset/Images/sea-coffee-morning-breakfast.jpg);
+        background-position: center;
+        background-size: cover;
+        font-family: sans-serif;
+    }
+
+    /* navbar */
+    nav{
+    
+    display: flex;
+    padding: 0.5% 3%;
+    justify-content: center;
+    align-items: center;
+    background-color: #00000091;
+    
+}
+
+
+nav h1{
+    font-size: 25px;
+    display: block;
+    cursor: pointer;
+    color: #fff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+span {
+    color: rgb(53, 242, 242);
+} 
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-links .fa-solid{
+    margin-right: 8px;
+}
+
+.active, .nav-links ul li:hover{
+    background-color: rgb(3, 213, 210);
+    border-radius: 3px;
+}
+
+/* SUB MENU */
+
+.sub-menu-1{
+    display: none;
+}
+
+.nav-links ul li:hover .sub-menu-1{
+    display: block;
+    position: absolute;
+    background: rgb(3, 213, 210);
+    margin-top: 9px;
+    margin-left: -15px;
+}
+.nav-links ul li:hover .sub-menu-1 ul{
+    display: block;
+    margin: 10px;
+    transition: 30s;
+}
+
+.nav-links ul li:hover .sub-menu-1 li{
+    width: 150px;
+    padding: 15px;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    text-align: left;
+}
+
+.nav-links ul li:hover .sub-menu-1 li a:hover{
+    color: #0044ff;
+}
+
+.sub-menu-2{
+    display: none;
+}
+
+.me:hover .sub-menu-2{
+    position: absolute;
+    display: block;
+    margin-top: 9px;
+    margin-left: 140px;
+    background:  rgb(3, 213, 210);
+}
+
+    
+    .form{
+    width: 300px;
+    height: 420px;
+    background: linear-gradient(to top, rgba(82, 64, 64, 0.5)50%,rgb(0, 0, 0,0.5)50%);
+    position: relative;
+    margin-top: 140px;
+    left: 470px;
+    border-radius: 10px;
+    padding: 25px;
+background-color: #000;
+}
+
+h2{
+    width: 220px;
+    font-family: sans-serif;
+    text-align: center;
+    color: gold;
+    font-size: 22px;
+   background-color:transparent;
+    border-radius: 10px;
+    margin: 2px;
+    padding: 8px;
+}
+
+input{
+    width: 240px;
+    height: 20px;
+    background: transparent;
+    border-bottom: 1px solid purple;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: white;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    font-family: sans-serif;
+}
+
+.form input:focus{
+    outline: none;
+}
+
+::placeholder{
+    color: white;
+    font-family: Arial;
+}
+
+.btn{
+    width: 180px;
+    height: 40px;
+    border: none;
+    margin-top: 8px;
+    cursor: pointer;
+}
+
+.btn:hover{
+   background: rgb(69, 146, 158);
+   color: rgb(123, 110, 35);
+}
+
+.btn a{
+    text-decoration: none;
+    color: #000;
+}
+
+.form .link{
+    font-family: Arial;
+    font-size: 17px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.form .link a{
+    text-decoration: none;
+    color: gold;
+}
+
+.form p{
+    color: #fff;
+}
+
+.liw{
+    padding-top: 15px;
+    padding-bottom: 10px;
+    text-align: center;
+    
+}
+
+.icon{
+    text-decoration: none;
+    color: white;
+}
+
+.icon ion-icon{
+    color: white;
+    font-size: 30px;
+    padding-left: 4px;
+    padding-top: 5px;
+    transition: 0.3s ease
+}
+
+.icon ion-icon:hover{
+    color: purple;
+}
+
+
+.class{
+    text-align: center;
+   font-family: 'Times New Roman';
+}
+
+
+
+</style>
+<body>
+
+    
+    <nav>
+        <h1>TECHSOFT<br><span>TECHNOLOGIES.</span></h1>
+            <div class="nav-links">
+            <ul>
+                <li > <i class="fa-solid fa-house"></i><a href="Index.html">HOME</a></li>
+                <li> <i class="fa-solid fa-user"></i><a href="About.html">ABOUT</a>
+                   
+                </li>
+                <li> <i class="fa-solid fa-clone"></i><a href="srevices.html">SERVICES</a>
+                    <div class="sub-menu-1">
+                        <ul>
+                            <li><a href="">WEB DESINING</a></li>
+                            <li><a href="">CLOUD SOLUTION</a></li>
+                            <li class="me"><a href="">MOBILE APP</a></i>
+                                <div class="sub-menu-2">
+                                    <ul>
+                                        <li><a href="">ANDROID APP</a></li>
+                                        <li><a href="">ios App</a></li>
+                                        <li><a href="">IONIC APP</a></li>
+                                    </ul>
+                                </div>   
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li> <i class="fa-solid fa-users"></i><a href="Career.html">CAREERS</a>
+                    <div class="sub-menu-1">
+                        <ul>
+                            <li><a href="">SOFTWARE DEVLOPER</a></li>
+                            <li><a href="">CLOUD SOLUTION</a></li>
+                            <li><a href="">MACHINE LEARNING</a></li>
+                        </ul>
+                    </div>  
+                </li>
+                <li> <i class="fa-solid fa-edit"></i><a href="Training.html">TRAINING</a></li>
+                <li> <i class="fa-solid fa-phone"></i><a href="Contact.html">CONTACT</a></li>
+                <li class="active"><i class="fa-solid fa-right-to-bracket"></i><a href="Login.html">LOGIN</a></li>
+            </ul>
+        </div>
+    </nav>
+        <!-- Login Form -->
+    <div class="form">
+        <h2>Login Here</h2>
+        <input type="email" name="email" placeholder="Enter Email Here">
+        <input type="password" name="" placeholder="Enter Password Here">
+        <button class="btn"><a href="">Login</a></button>
+
+        <p class="link">Don't have an account<br>
+        <a href="">Sign up</a> here</a></p>
+        <p class="liw">Login with</p>
+
+          <div class="icon">
+            <a href=""><ion-icon name="logo-facebook"></ion-icon></a>
+            <a href=""><ion-icon name="logo-instagram"></ion-icon></a>
+            <a href=""><ion-icon name="logo-twitter"></ion-icon></a>
+            <a href=""><ion-icon name="logo-Google"></ion-icon></a>
+            <a href=""><ion-icon name="logo-Skype"></ion-icon></a>
+          </div>
+    </div>
+<script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</body>
+</html>

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Careers at Techsoft Technologies</title>
+</head>
+<style>
+    body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
+
+/* navbar */
+nav{
+    
+    display: flex;
+    padding: 0.5% 3%;
+    justify-content: center;
+    align-items: center;
+    background-color: #00000091;
+    
+}
+
+
+nav h1{
+    font-size: 25px;
+    display: block;
+    cursor: pointer;
+    color: #fff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+span {
+    color: rgb(53, 242, 242);
+} 
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-links .fa-solid{
+    margin-right: 8px;
+}
+
+.active, .nav-links ul li:hover{
+    background-color: rgb(3, 213, 210);
+    border-radius: 3px;
+}
+
+/* SUB MENU */
+
+.sub-menu-1{
+    display: none;
+}
+
+.nav-links ul li:hover .sub-menu-1{
+    display: block;
+    position: absolute;
+    background: rgb(3, 213, 210);
+    margin-top: 9px;
+    margin-left: -15px;
+}
+.nav-links ul li:hover .sub-menu-1 ul{
+    display: block;
+    margin: 10px;
+    transition: 30s;
+}
+
+.nav-links ul li:hover .sub-menu-1 li{
+    width: 150px;
+    padding: 15px;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    text-align: left;
+}
+
+.nav-links ul li:hover .sub-menu-1 li a:hover{
+    color: #0044ff;
+}
+
+.sub-menu-2{
+    display: none;
+}
+
+.me:hover .sub-menu-2{
+    position: absolute;
+    display: block;
+    margin-top: 9px;
+    margin-left: 140px;
+    background:  rgb(3, 213, 210);
+}
+
+
+.careers {
+    background-color: #be83e3;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #000;
+ 
+}
+
+h3 {
+    color: #000000;
+    margin-top: 15px;
+}
+
+.job-opening {
+    margin-bottom: 20px;
+}
+
+.job-opening h4 {
+    color: #000;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.apply-button {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #4aaadb;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.apply-button:hover {
+    background-color: #555;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+</style>
+<body>
+
+    <nav>
+        <h1>TECHSOFT<br><span>TECHNOLOGIES.</span></h1>
+            <div class="nav-links">
+            <ul>
+                <li > <i class="fa-solid fa-house"></i><a href="Index.html">HOME</a></li>
+                <li> <i class="fa-solid fa-user"></i><a href="About.html">ABOUT</a>
+                   
+                </li>
+                <li> <i class="fa-solid fa-clone"></i><a href="srevices.html">SERVICES</a>
+                    <div class="sub-menu-1">
+                        <ul>
+                            <li><a href="">WEB DESINING</a></li>
+                            <li><a href="">CLOUD SOLUTION</a></li>
+                            <li class="me"><a href="">MOBILE APP</a></i>
+                                <div class="sub-menu-2">
+                                    <ul>
+                                        <li><a href="">ANDROID APP</a></li>
+                                        <li><a href="">ios App</a></li>
+                                        <li><a href="">IONIC APP</a></li>
+                                    </ul>
+                                </div>   
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="active"> <i class="fa-solid fa-users"></i><a href="Career.html">CAREERS</a>
+                    <div class="sub-menu-1">
+                        <ul>
+                            <li><a href="">SOFTWARE DEVLOPER</a></li>
+                            <li><a href="">CLOUD SOLUTION</a></li>
+                            <li><a href="">MACHINE LEARNING</a></li>
+                        </ul>
+                    </div>  
+                </li>
+                <li> <i class="fa-solid fa-edit"></i><a href="Training.html">TRAINING</a></li>
+                <li> <i class="fa-solid fa-phone"></i><a href="Contact.html">CONTACT</a></li>
+                <li><i class="fa-solid fa-right-to-bracket"></i><a href="Login.html">LOGIN</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="careers">
+        <h2><u>Careers at Techsoft Technologies</u></h2>
+
+        <p>Join our dynamic team and be part of an innovative technology company that values talent, creativity, and a passion for excellence. At Techsoft Technologies, we are committed to creating a work environment that fosters growth, collaboration, and success.</p>
+       <br>
+        <h3><u>Current Openings :</u></h3>
+          <br>
+        <div class="job-opening">
+            <h4><u>Software Engineer</u></h4>
+            <p>We are looking for a skilled software engineer to join our development team. If you have a strong background in software development and a passion for creating cutting-edge solutions, we want to hear from you.</p>
+            <p><strong>Requirements:</strong></p>
+            <ul>
+                <li>Bachelor's degree in Computer Science or related field</li>
+                <li>Experience with programming languages such as Java, Python, or C++</li>
+                <li>Knowledge of web development frameworks (e.g., React, Angular)</li>
+                <li>Excellent problem-solving skills</li>
+                <li>Strong communication and teamwork abilities</li>
+            </ul>
+            <a href="#" class="apply-button">Apply Now</a>
+        </div>
+        <br><hr><br>
+        <div class="job-opening">
+            <h4><u>UX/UI Designer</u></h4>
+            <p>We are seeking a talented UX/UI designer to create engaging and user-friendly interfaces for our web and mobile applications. If you have a keen eye for design and a portfolio showcasing your creativity, we would love to hear from you.</p>
+            <p><strong>Requirements:</strong></p>
+            <ul>
+                <li>Degree in Design, Human-Computer Interaction, or related field</li>
+                <li>Proven experience with design tools (e.g., Adobe XD, Figma)</li>
+                <li>Understanding of user-centered design principles</li>
+                <li>Excellent visual design skills</li>
+                <li>Strong portfolio demonstrating previous design projects</li>
+            </ul>
+            <a href="#" class="apply-button">Apply Now</a>
+        </div>
+
+        <!-- Add more job openings as needed -->
+
+        <p>If you don't see a position that matches your skills, feel free to submit your resume for future opportunities at careers@techsoft.com.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Techsoft Technologies</p>
+    </footer>
+
+</body>
+
+</html>

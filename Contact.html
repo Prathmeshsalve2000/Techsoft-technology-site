@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact</title>
+	<link rel="icon" type="image" href="/Asset/icon img.png">
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+         /* navbar */
+
+         nav{
+    
+    display: flex;
+    padding: 0.5% 3%;
+    justify-content: center;
+    align-items: center;
+    background-color: #00000091;
+    
+}
+
+
+nav h1{
+    font-size: 25px;
+    display: block;
+    cursor: pointer;
+    color: #fff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+span {
+    color: rgb(53, 242, 242);
+} 
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-links .fa-solid{
+    margin-right: 8px;
+}
+
+.active, .nav-links ul li:hover{
+    background-color: rgb(3, 213, 210);
+    border-radius: 3px;
+}
+
+/* SUB MENU */
+
+.sub-menu-1{
+    display: none;
+}
+
+.nav-links ul li:hover .sub-menu-1{
+    display: block;
+    position: absolute;
+    background: rgb(3, 213, 210);
+    margin-top: 9px;
+    margin-left: -15px;
+}
+.nav-links ul li:hover .sub-menu-1 ul{
+    display: block;
+    margin: 10px;
+    transition: 30s;
+}
+
+.nav-links ul li:hover .sub-menu-1 li{
+    width: 150px;
+    padding: 15px;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    text-align: left;
+}
+
+.nav-links ul li:hover .sub-menu-1 li a:hover{
+    color: #0044ff;
+}
+
+.sub-menu-2{
+    display: none;
+}
+
+.me:hover .sub-menu-2{
+    position: absolute;
+    display: block;
+    margin-top: 9px;
+    margin-left: 140px;
+    background:  rgb(3, 213, 210);
+}
+
+/* header */
+
+header {
+    background: url(/Asset/Images/find\ your\ own\ direction\ phone\ wallpaper.png);
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 9em;
+}
+
+header h1{
+    font-size: 55px;
+    color: #f4f4ef ;
+}
+
+/* contact form */
+
+    *{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Quicksand', sans-serif;
+}
+
+body{
+	height: 100vh;
+	width: 100%;
+}
+
+.container{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px 100px;
+    background-color: #f6eb70;
+    
+}
+
+.container:after{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background: url("img/bg.jpg") no-repeat center;
+	background-size: cover;
+	filter: blur(50px);
+	z-index: -1;
+}
+.contact-box{
+	max-width: 850px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-color: #fff;
+	box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.19);
+    background-color: rgb(39, 221, 160);
+}
+
+.left{
+	background: url("img/bg.jpg") no-repeat center;
+	background-size: cover;
+	height: 90%;
+}
+
+.right{
+	padding: 25px 40px;
+    width: 110%;
+padding-left: 5px;
+ 
+}
+
+h2{
+	position: relative;
+	padding: 0 0 10px;
+	margin-bottom: 10px;
+}
+
+h2:after{
+	content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 50px;
+    border-radius: 2px;
+    background-color: orange;
+}
+
+.field{
+	width: 100%;
+	border: 2px solid rgba(0, 0, 0, 0);
+	outline: none;
+	background-color: rgba(230, 230, 230, 0.6);
+	padding: 0.5rem 1rem;
+	font-size: 1.1rem;
+	margin-bottom: 22px;
+	transition: .3s;
+}
+
+.field:hover{
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+textarea{
+	min-height: 150px;
+}
+
+.btn{
+	width: 100%;
+	padding: 0.5rem 1rem;
+	background-color: orange;
+	color: #fff;
+	font-size: 1.1rem;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	transition: .3s;
+}
+
+.btn:hover{
+    background-color: green;
+}
+
+.field:focus{
+    border: 2px solid rgba(30,85,250,0.47);
+    background-color: #fff;
+}
+
+/* footer */
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+@media screen and (max-width: 880px){
+	.contact-box{
+		grid-template-columns: 1fr;
+	}
+	.left{
+		height: 200px;
+	}
+}
+</style>
+<body>
+
+    <nav>
+        <h1>TECHSOFT<br><span>TECHNOLOGIES.</span></h1>
+            <div class="nav-links">
+            <ul>
+                <li > <i class="fa-solid fa-house"></i><a href="Index.html">HOME</a></li>
+                <li> <i class="fa-solid fa-user"></i><a href="a">ABOUT</a>
+                   
+                </li>
+                <li> <i class="fa-solid fa-clone"></i><a href="srevices.html">SERVICES</a>
+                    <div class="sub-menu-1">
+                        <ul>
+                            <li><a href="">WEB DESINING</a></li>
+                            <li><a href="">CLOUD SOLUTION</a></li>
+                            <li class="me"><a href="">MOBILE APP</a></i>
+                                <div class="sub-menu-2">
+                                    <ul>
+                                        <li><a href="">ANDROID APP</a></li>
+                                        <li><a href="">ios App</a></li>
+                                        <li><a href="">IONIC APP</a></li>
+                                    </ul>
+                                </div>   
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li> <i class="fa-solid fa-users"></i><a href="Career.html">CAREERS</a>
+                    <div class="sub-menu-1">
+                        <ul>
+                            <li><a href="">SOFTWARE DEVLOPER</a></li>
+                            <li><a href="">CLOUD SOLUTION</a></li>
+                            <li><a href="">MACHINE LEARNING</a></li>
+                        </ul>
+                    </div>  
+                </li>
+                <li> <i class="fa-solid fa-edit"></i><a href="Training.html">TRAINING</a></li>
+                <li class="active"> <i class="fa-solid fa-phone"></i><a href="Contact.html">CONTACT</a></li>
+                <li><i class="fa-solid fa-right-to-bracket"></i><a href="Login.html">LOGIN</a></li>
+            </ul>
+        </div>
+    </nav>
+
+       
+      <header>
+       <h1>Contact Us</h1>
+      </header>
+
+
+	<div class="container">
+		<div class="contact-box">
+			<div class="left">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d60516.27807574875!2d73.85206392222065!3d18.56198049757841!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c3f64d159451%3A0xb66f315b2d5e1990!2sRadiant%20IT%20Services%20PVT%20LTD!5e0!3m2!1sen!2sin!4v1702615602858!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                
+            </div>
+			<div class="right">
+				<h2>Contact Us</h2>
+				<input type="text" class="field" placeholder="Your Name">
+				<input type="text" class="field" placeholder="Your Email">
+				<input type="text" class="field" placeholder="Phone">
+				<textarea placeholder="Message" class="field"></textarea>
+				<button class="btn">Send</button>
+			</div>
+		</div>
+	</div>
+</body>
+  
+<!-- Footer -->
+
+<footer>
+    <p>&copy; 2023 Techsoft Technologies</p>
+</footer>
+
+
+</html>

@@ -1,0 +1,501 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.header{
+   width: 100%; 
+   height: 100vh;
+    background: linear-gradient(rgb(0, 0, 0,0.5)50%,rgb(0, 0, 0,0.5)50%),url(/Asset/Images/Black\ and\ Blue\ Futuristic\ Technology\ Banner\ Landscape.png); 
+   background-position: center;
+   background-size: cover;
+   position: relative;
+}
+
+
+nav{
+    
+    display: flex;
+    padding: 0.5% 3%;
+    justify-content: center;
+    align-items: center;
+    
+}
+  
+nav:hover{
+    background-color: #000000be;
+}
+
+nav h1{
+    font-size: 25px;
+    display: block;
+    cursor: pointer;
+    color: #fff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+span {
+    color: rgb(53, 242, 242);
+} 
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-links .fa-solid{
+    margin-right: 8px;
+}
+
+.active, .nav-links ul li:hover{
+    background-color: rgb(3, 213, 210);
+    border-radius: 3px;
+}
+
+/* SUB MENU */
+
+.sub-menu-1{
+    display: none;
+}
+
+.nav-links ul li:hover .sub-menu-1{
+    display: block;
+    position: absolute;
+    background: rgb(3, 213, 210);
+    margin-top: 9px;
+    margin-left: -15px;
+}
+.nav-links ul li:hover .sub-menu-1 ul{
+    display: block;
+    margin: 10px;
+    transition: 30s;
+}
+
+.nav-links ul li:hover .sub-menu-1 li{
+    width: 150px;
+    padding: 15px;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    text-align: left;
+}
+
+.nav-links ul li:hover .sub-menu-1 li a:hover{
+    color: #0044ff;
+}
+
+.sub-menu-2{
+    display: none;
+}
+
+.me:hover .sub-menu-2{
+    position: absolute;
+    display: block;
+    margin-top: 9px;
+    margin-left: 140px;
+    background:  rgb(3, 213, 210);
+}
+
+
+
+.text{
+    vertical-align: middle;
+    display: table-cell!important;
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 48%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.text h2{
+   
+    display: table-cell!important;
+    color: #fff;
+   font-size: 38px;
+   font-weight: bold;
+   font-family: 'play'sans-serif;
+   display: block;
+   line-height: 1.1;
+
+
+}
+
+*{
+    box-sizing: border-box;
+}
+
+
+
+.text p{
+    text-align: left;
+    justify-content: left;
+    color: #fff;
+   font-size: 1.25rem;
+   font-weight: 300;
+   font-family: 'play'sans-serif;
+   margin-top: 0;
+   margin-bottom: 1rem;
+   display: block;
+   line-height: 1.5;
+   margin-block-start: 1em;
+   margin-block-end: 1em;
+   margin-inline-start: 0px;
+   margin-inline-end: 0px;
+}
+
+.btn{
+    display: inline-block;
+    float: left;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 20px;
+    background-color: rgb(3, 213, 210);
+    position: relative;
+    cursor: pointer;
+}
+
+.btn:hover{
+    border: 1px solid #d08e38;
+    transition: 1s;
+}
+
+/* ABOUT */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.about{
+    width: 100%;
+    height: 100vh;
+    background: url(/Asset/Images/Ab.png);
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+
+.heading h1{
+    color: #ff6347;
+    font-size: 55px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 18px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 15px auto;
+}
+
+.A1{
+    flex: 1;
+    width: 600px;
+    margin: 0 35px;
+}
+
+.A1 h2{
+    font-size: 38px;
+    margin-bottom: 40px;
+    color:#ff4500;
+}
+
+.A1 p{
+    font-size: 24px;
+    line-height: 1.5;
+    margin-bottom: 60px;
+    color: #fff;
+}
+
+.A1 button{
+     display: inline-block;
+     background-color: #ff4500;
+     color: #fff;
+     padding: 12px 24px;
+     border-radius: 5px;
+     font-size: 20px;
+     border: none;
+     cursor: pointer;
+     transition: 0.3s ease;
+}
+
+.A1 button:hover{
+    background: #ff6347;
+    transform: scale(1.1);
+}
+
+
+
+
+/* MARKETING */
+
+.MARK{
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    box-sizing: border-box;
+    background: url(/Asset/Images/MARKETING\ BACKHROUND.png);
+    background-position: center;
+    background-size: cover;
+    
+    
+}
+
+.course h1{
+    font-size: 55px;
+    font-weight: 600;
+    color: #fff;
+    margin-top: 5px;
+}
+.course p{
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.row{
+    margin-top: 10%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.course-call{
+    margin: 0px 50px 0px 50px;
+    flex-basis: 24%;
+    justify-content: space-between;
+    background: #93c7d8;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 25px 55px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    cursor: pointer;
+
+}
+
+.course-call h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+
+}
+
+.course-call:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: rgb(242, 233, 229);
+}
+
+
+
+  
+/* SERVICES */
+
+
+.animation{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    overflow: hidden;
+    background: url(/Asset/Images/ABOUT\ BACKGROUND.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.h h1{
+    font-size: 55px;
+    color: #fefbb9;
+    font-weight: 600;
+    margin-top: -370px;
+    margin-left: 650px;
+}
+.container{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow: hidden;
+}
+
+.imgContainer{
+    width: 100%;
+    height: 600px;
+    position: absolute;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+}
+
+.slide_div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 30px 0 30px;
+}
+
+img{
+    position: relative;
+    height: 370px;
+    width: 240px;
+    filter: saturate(100%);
+    transition: 0.7s;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+}
+
+.button{
+    position: absolute;
+    width: 240px;
+    height: 370px;
+    transition: 0.7s;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+}
+
+.button:hover{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+
+
+footer{
+    background-color: rgb(34, 34, 34);
+    color: #fff;
+}
+
+.footer_info{
+     width: 90%;
+     margin: 0 auto;
+     display: flex;
+     padding: 50px 0;
+}
+
+
+.footer_info .footer_width a{
+    padding: 0 15px;
+}
+
+
+.footer_info h2{
+    margin-bottom: 20px;
+}
+
+.footer_width link{
+    list-style-type: square;
+}
+
+.footer_width link h2{
+    display: inline-flex;
+}
+
+.a .contact{
+    width: 10%;
+}
+
+.link{
+    width: 20%;
+}
+
+
+
+.social {
+   display: flex;
+}
+
+
+.social a{
+    display: inline-block;
+    margin-right: 20px;
+    margin-top: 30px;
+    background-color: transparent;
+    text-align: center; 
+  
+}
+
+.fab{
+    color: #fff;
+    font-size: 40px;
+    list-style-type: none;
+}
+ 
+
+
+ a :hover{
+    background-color: #fff;
+    color: #000;
+}
+
+.link  a {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: #fff;
+   list-style-type: none;
+   text-decoration: none;
+}
+
+.link  a:hover{
+    color: #000;
+}
+
+.footer_width contact {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.footer_width contact span{
+    margin-right: 15px;
+    margin-top: 30px;
+}
+
+.far {
+    color: #fff;
+}
+
+.fas {
+    color: #fff;
+}
+
+a{
+    color: #fff;
+}
+
+.copy-right{
+    padding: 15px 0;
+    text-align: center;
+    background-color: rgb(66, 66, 66);
+}

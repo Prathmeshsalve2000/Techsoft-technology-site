@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Training</title>
+    <link rel="icon" type="image" href="/Asset/icon img.png">
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+       
+       nav{
+    
+    display: flex;
+    padding: 0.5% 3%;
+    justify-content: center;
+    align-items: center;
+    background-color: #00000091;
+    
+}
+
+
+nav h1{
+    font-size: 25px;
+    display: block;
+    cursor: pointer;
+    color: #fff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+span {
+    color: rgb(53, 242, 242);
+} 
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-links .fa-solid{
+    margin-right: 8px;
+}
+
+.active, .nav-links ul li:hover{
+    background-color: rgb(3, 213, 210);
+    border-radius: 3px;
+}
+
+/* SUB MENU */
+
+.sub-menu-1{
+    display: none;
+}
+
+.nav-links ul li:hover .sub-menu-1{
+    display: block;
+    position: absolute;
+    background: rgb(3, 213, 210);
+    margin-top: 9px;
+    margin-left: -15px;
+}
+.nav-links ul li:hover .sub-menu-1 ul{
+    display: block;
+    margin: 10px;
+    transition: 30s;
+}
+
+.nav-links ul li:hover .sub-menu-1 li{
+    width: 150px;
+    padding: 15px;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    text-align: left;
+}
+
+.nav-links ul li:hover .sub-menu-1 li a:hover{
+    color: #0044ff;
+}
+
+.sub-menu-2{
+    display: none;
+}
+
+.me:hover .sub-menu-2{
+    position: absolute;
+    display: block;
+    margin-top: 9px;
+    margin-left: 140px;
+    background:  rgb(3, 213, 210);
+}
+
+        body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: url(/Asset/Images/TRAINING\ BACK.png);
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 6em;
+}
+
+header h1{
+    font-size: 55px;
+    color: #fff ;
+}
+
+.training-program {
+    background-color: #fff;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #333;
+    font-size: 40px;
+}
+
+.course-details {
+    margin-top: 15px;
+}
+
+/* ul {
+    list-style-type: none;
+    padding: 0;
+} */
+
+.training-program{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(182, 244, 244);
+}
+
+.course-details  li{
+   color: #fff;
+   background-color:  rgb(185, 21, 222);
+    box-sizing: border-box;
+    border: 1px solid #fff;
+    display: inline-block;
+    padding: 10px;
+}
+
+ p{
+    box-sizing: border-box;
+    border: 1px solid #f69329;
+    display: inline-block;
+    padding: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <h1>TECHSOFT<br><span>TECHNOLOGIES.</span></h1>
+            <div class="nav-links">
+            <ul>
+                <li > <i class="fa-solid fa-house"></i><a href="Index.html">HOME</a></li>
+                <li> <i class="fa-solid fa-user"></i><a href="About.html">ABOUT</a>
+                   
+                </li>
+                <li> <i class="fa-solid fa-clone"></i><a href="srevices.html">SERVICES</a>
+                    <div class="sub-menu-1">
+                        <ul>
+                            <li><a href="">WEB DESINING</a></li>
+                            <li><a href="">CLOUD SOLUTION</a></li>
+                            <li class="me"><a href="">MOBILE APP</a></i>
+                                <div class="sub-menu-2">
+                                    <ul>
+                                        <li><a href="">ANDROID APP</a></li>
+                                        <li><a href="">ios App</a></li>
+                                        <li><a href="">IONIC APP</a></li>
+                                    </ul>
+                                </div>   
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li> <i class="fa-solid fa-users"></i><a href="Career.html">CAREERS</a>
+                    <div class="sub-menu-1">
+                        <ul>
+                            <li><a href="">SOFTWARE DEVLOPER</a></li>
+                            <li><a href="">CLOUD SOLUTION</a></li>
+                            <li><a href="">MACHINE LEARNING</a></li>
+                        </ul>
+                    </div>  
+                </li>
+                <li class="active"> <i class="fa-solid fa-edit"></i><a href="Training.html">TRAINING</a></li>
+                <li> <i class="fa-solid fa-phone"></i><a href="Contact.html">CONTACT</a></li>
+                <li><i class="fa-solid fa-right-to-bracket"></i><a href="Login.html">LOGIN</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <header>
+        <h1>Techsoft Technologies Training Programs</h1>
+    </header>
+
+    <section class="training-program">
+        <h2><u>Web Design Training</u></h2>
+
+        <div class="course-details">
+            <h3>Course Overview</h3>
+            <p>Our web design training program provides comprehensive knowledge<br> and hands-on experience to build modern and responsive websites.<br> Participants will learn the latest design principles, front-end development techniques, and tools.</p>
+
+            <h3>Topics Covered</h3>
+            <ul>
+                <li>HTML5 and CSS3 Fundamentals</li>
+                <li>Responsive Web Design</li>
+                <li>JavaScript and jQuery</li>
+                <li>UI/UX Design Principles</li>
+                <li>Web Design Tools (e.g., Adobe XD, Figma)</li>
+                <li>Cross-Browser Compatibility</li>
+                <li>Version Control with Git</li>
+            </ul>
+
+            <h3>Duration</h3>
+            <p>8 weeks (Part-time)</p>
+
+            <h3>Certification</h3>
+            <p>Participants will receive a certificate upon successful completion of the program.</p>
+        </div>
+    </section>
+
+    <section class="training-program">
+        <h2><u>Mobile App Development Training</u></h2>
+
+        <div class="course-details">
+            <h3>Course Overview</h3>
+            <p>Learn the skills needed to develop mobile applications for iOS and Android platforms.<br> Our mobile app development training covers both native and cross-platform development,<br> ensuring participants are well-equipped for the dynamic mobile landscape.</p>
+
+            <h3>Topics Covered</h3>
+            <ul>
+                <li>Introduction to Mobile App Development</li>
+                <li>Swift and iOS Development (for iOS track)</li>
+                <li>Kotlin and Android Development (for Android track)</li>
+                <li>Cross-Platform Development with Flutter or React Native</li>
+                <li>RESTful API Integration</li>
+                <li>Mobile App Security Best Practices</li>
+                <li>App Deployment and Distribution</li>
+            </ul>
+
+            <h3>Duration</h3>
+            <p>10 weeks (Full-time)</p>
+
+            <h3>Certification</h3>
+            <p>Participants will receive a certificate and portfolio showcasing their mobile app projects.</p>
+        </div>
+    </section>
+
+    <section class="training-program">
+        <h2><u>Cloud Solutions Training</u></h2>
+
+        <div class="course-details">
+            <h3>Course Overview</h3>
+            <p>Explore the world of cloud computing and gain proficiency in leading cloud platforms.<br> Our cloud solutions training covers infrastructure as a service (IaaS),<br> platform as a service (PaaS), and software as a service (SaaS) models.</p>
+
+            <h3>Topics Covered</h3>
+            <ul>
+                <li>Introduction to Cloud Computing</li>
+                <li>AWS, Azure, or Google Cloud Platform Basics</li>
+                <li>Cloud Storage and Databases</li>
+                <li>Virtualization and Containers (Docker, Kubernetes)</li>
+                <li>Serverless Architecture</li>
+                <li>DevOps and Continuous Integration/Continuous Deployment (CI/CD)</li>
+                <li>Cloud Security and Compliance</li>
+            </ul>
+
+            <h3>Duration</h3>
+            <p>12 weeks (Part-time)</p>
+
+            <h3>Certification</h3>
+            <p>Participants will receive a certification demonstrating their proficiency in cloud solutions.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Techsoft Technologies</p>
+    </footer>
+
+</body>
+
+</html>
